@@ -1,13 +1,62 @@
 
 
 <head>
-  <title>deathPong</title>
+	<title>deathPong</title>
 </head>
 
 <body>
 
-  <h1>Welcome to Death Pong ... Have a marginal day!</h1>
-  <hr>
+	<div class="container">
+
+		<br> <br> <br> <br>
+
+		{{>homePage}}
+
+	</div>
 
 </body>
 
+
+
+<template name='homePage'>
+
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h1>Welcome to Death Pong</h1>
+			</div>
+			<div class="panel-body">
+				<h3>
+					Have a marginal day!
+
+					<br>
+					<br>
+
+					<div class="center-block">
+						<i class="fa fa-bomb fa-3x pull-left fa-border"></i>
+
+						<i class="fa fa-birthday-cake fa-3x pull-left fa-border"></i>
+
+						<i class="fa fa-gift fa-3x pull-left fa-border"></i>
+
+						<i class="fa fa-user-secret fa-3x pull-left fa-border"></i>
+					</div>
+
+				</h3>
+			</div>
+		</div>
+
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">Things to do ...</h3>
+			</div>
+			<div class="panel-body">
+				<a href="/sign-up" class="btn btn-primary btn-lg" role="button">
+					Damm Ye ... Sign Up Now!
+				</a>
+				<a href="/sign-in" class="btn btn-primary btn-lg" role="button">
+					Login Now Or Perish
+				</a>
+			</div>
+		</div>
+
+</template>
