@@ -1,0 +1,47 @@
+
+
+
+<template name="gamesMain">
+
+	The time is {{getCurrentTime}}
+
+	<br> <br>
+
+	<button type="button" id="startGameButton" class="btn btn-primary">Start A Game</button>
+
+	<br>
+
+	{{> gamesList}}
+
+</template>
+
+
+<template name="gamesList">
+
+	<div class="list-group">
+		{{#each activeGames}}
+			{{> gamesListEntry}}
+		{{/each}}
+	</div>
+
+</template>
+
+<template name="gamesListEntry">
+	<a href="#" class="list-group-item">
+		<h3>
+			{{name}}
+			<small>
+				score: {{playerA.score}} {{playerB.score}}
+				<br>
+				playerOne: {{playerA.id}} playerTwo: {{playerB.id}}
+
+				Created: {{showCreated}}
+
+				Expires in {{showRemaining}}
+			</small>
+		</h3>
+
+		<button type="button" id="joinGame" class="btn btn-info">Join</button>
+		<button type="button" id="viewGame" class="btn btn-info">View</button>
+	</a>
+</template>
