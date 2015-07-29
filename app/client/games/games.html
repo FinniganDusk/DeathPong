@@ -13,8 +13,29 @@
 
 	{{> gamesList}}
 
+
+	{{> pongTable}}
+
 </template>
 
+
+
+<template name="pongTable">
+
+	<div id="pong_table">
+		<div id="pong_paddle1" style="top: 260px;">&nbsp;</div>
+		<div id="pong_paddle2" style="top: 339.93105536797px;">&nbsp;</div>
+
+		<div id="pong_ball" style="left: 581.6px; top: 300.477px;"><img src="images/ball.png" width="11" height="11" alt="ball"></div>
+
+		<div id="pong_number1"><img class="numberpiece top" src="images/number/top.png" width="40" height="80" alt="#1 top" style="display: inline;"><img class="numberpiece topleft" src="images/number/topleft.png" width="40" height="80" alt="#1 topleft" style="display: inline;"><img class="numberpiece topright" src="images/number/topright.png" width="40" height="80" alt="#1 topright" style="display: none;"><img class="numberpiece middle" src="images/number/middle.png" width="40" height="80" alt="#1 middle" style="display: inline;"><img class="numberpiece bottomleft" src="images/number/bottomleft.png" width="40" height="80" alt="#1 bottomleft" style="display: none;"><img class="numberpiece bottomright" src="images/number/bottomright.png" width="40" height="80" alt="#1 bottomright" style="display: inline;"><img class="numberpiece bottom" src="images/number/bottom.png" width="40" height="80" alt="#1 bottom" style="display: inline;"></div>
+		<div id="pong_number2"><img class="numberpiece top" src="images/number/top.png" width="40" height="80" alt="#2 top" style="display: inline;"><img class="numberpiece topleft" src="images/number/topleft.png" width="40" height="80" alt="#2 topleft" style="display: inline;"><img class="numberpiece topright" src="images/number/topright.png" width="40" height="80" alt="#2 topright" style="display: none;"><img class="numberpiece middle" src="images/number/middle.png" width="40" height="80" alt="#2 middle" style="display: inline;"><img class="numberpiece bottomleft" src="images/number/bottomleft.png" width="40" height="80" alt="#2 bottomleft" style="display: inline;"><img class="numberpiece bottomright" src="images/number/bottomright.png" width="40" height="80" alt="#2 bottomright" style="display: inline;"><img class="numberpiece bottom" src="images/number/bottom.png" width="40" height="80" alt="#2 bottom" style="display: inline;"></div>
+
+		<div id="pong_number3"><img class="numberpiece top" src="images/number/top.png" width="40" height="80" alt="#3 top" style="display: none;"><img class="numberpiece topleft" src="images/number/topleft.png" width="40" height="80" alt="#3 topleft" style="display: none;"><img class="numberpiece topright" src="images/number/topright.png" width="40" height="80" alt="#3 topright" style="display: none;"><img class="numberpiece middle" src="images/number/middle.png" width="40" height="80" alt="#3 middle" style="display: none;"><img class="numberpiece bottomleft" src="images/number/bottomleft.png" width="40" height="80" alt="#3 bottomleft" style="display: none;"><img class="numberpiece bottomright" src="images/number/bottomright.png" width="40" height="80" alt="#3 bottomright" style="display: none;"><img class="numberpiece bottom" src="images/number/bottom.png" width="40" height="80" alt="#3 bottom" style="display: none;"></div>
+		<div id="pong_number4"><img class="numberpiece top" src="images/number/top.png" width="40" height="80" alt="#4 top" style="display: none;"><img class="numberpiece topleft" src="images/number/topleft.png" width="40" height="80" alt="#4 topleft" style="display: none;"><img class="numberpiece topright" src="images/number/topright.png" width="40" height="80" alt="#4 topright" style="display: inline;"><img class="numberpiece middle" src="images/number/middle.png" width="40" height="80" alt="#4 middle" style="display: none;"><img class="numberpiece bottomleft" src="images/number/bottomleft.png" width="40" height="80" alt="#4 bottomleft" style="display: none;"><img class="numberpiece bottomright" src="images/number/bottomright.png" width="40" height="80" alt="#4 bottomright" style="display: inline;"><img class="numberpiece bottom" src="images/number/bottom.png" width="40" height="80" alt="#4 bottom" style="display: none;"></div>
+	</div>
+
+</template>
 
 <template name="gamesList">
 
